@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todolist.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <div id="myDIV" class="header">
+      <h1>To Do Listesi</h1>
+      <h2>
+        <marquee> Rüyalarını gerçekleştirmenin en iyi yolu uyanmaktır. - Muhammed Ali</marquee>    
+      </h2>
+      <div class="img"><img src="logo.png" alt="todologo" /></div>
+      <input type="text" id="myInput" placeholder="Görevi yaz..." />
+      <span onclick="newElement()" class="addBtn">Ekle</span>
+    </div>
+    <div style="margin-left: 100px; color: white;">
+      <p style="display: inline;">Lütfen bir zorluk seçiniz</p> 
+      <br><br><br>
+      <div class="rdb">
+          <input type="radio" id="easy" name="Dif" value="kolay">
+          <label for="easy" style="display: inline;">Kolay</label>
+      </div>
+
+      <div class="rdb">
+          <input type="radio" id="med" name="Dif" value="orta">
+          <label for="med">Orta</label>
+      </div>
+
+      <div class="rdb">
+          <input type="radio" id="hard" name="Dif" value="zor">
+          <label for="hard">Zor</label>
+      </div>
+      <br>
+      <div class="vertical-center">
+          
+      </div>
+    <div class="table">
+      <table>
+        <ul id="todo">
+          <h2>Yapılacaklar</h2>
+          <li>Hit the gym</li>
+          <li class="checked">Pay bills</li>
+          <li>Meet George</li>
+          <li>Buy eggs</li>
+          <li>Read a book</li>
+          <li>Organize office</li>
+        </ul>
+        
+
+        <ul id="progress">
+          <h2>Süreçte Olanlar</h2>
+          <li>Hit the gym</li>
+          <li class="checked">Pay bills</li>
+          <li>Meet George</li>
+          <li>Buy eggs</li>
+          <li>Read a book</li>
+          <li>Organize office</li>
+        </ul>
+
+        <ul id="completed">
+          <h2>Tamamlananlar</h2>
+          <li>Hit the gym</li>
+          <li class="checked">Pay bills</li>
+          <li>Meet George</li>
+          <li>Buy eggs</li>
+          <li>Read a book</li>
+          <li>Organize office</li>
+        </ul>
+      </table>
+    </div>
+    <script src="todolist.js"></script>
+  </body>
+</html>
